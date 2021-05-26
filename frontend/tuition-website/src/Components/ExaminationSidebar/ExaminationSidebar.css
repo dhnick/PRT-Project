@@ -1,0 +1,26 @@
+.examinationSidebar {
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+    height: 600px;
+
+    background-color: white;
+}
+.examinationSidebar.open {
+    margin-left: -350px;
+}
+.examinationSideber__courses {
+    padding: 80px 0px 30px 0px;
+}
+.examinationSidebar__course {
+    margin-left: 0px;
+    background-color: #333 !important;
+    background-image: none !important;
+}
+.examinationSidebar__backBlock {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    cursor: pointer;
+}
