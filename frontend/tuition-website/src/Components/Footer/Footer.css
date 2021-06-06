@@ -22,6 +22,7 @@
 }
 .footer_icon {
     cursor: pointer;
+    color: white;
 }
 .footer_icon:hover {
     color: #FFBF00;
@@ -70,7 +71,7 @@
     margin-left: -41px;
 }
 .footer__contactUs ul li:hover {
-    color: #ffab5e;
+    color: #FFBF00;
 }
 .footer__contactUs h4 {
     color: white;

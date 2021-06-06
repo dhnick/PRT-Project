@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+    const location = useLocation();
+    const [activeMenu, setActiveMenu] = useState(false);
+
+    useEffect(() => {
+        setActiveMenu(false);
+    }, [location])
+
     return (
         <header className="header">
             <div className="header__wrap">
                 <div className="header__logo">
-                    <img src="../../assets/TuitionLogo.png" alt="Tuition Logo" />
+                    <img src="./assets/TuitionLogo.png" alt="Tuition Logo" />
                 </div>
 
-                <nav className="header__navigation">
+                <div className={`header__navigation ${activeMenu ? 'active' : ''}`}>
                     <ul>
                         <li>
                             <Link to="/" >Home</Link>
@@ -23,15 +30,22 @@ function Header() {
                             <Link to="/questions">Q/A</Link>
                         </li>
                         <li>
-                            <Link to="/register">Sign-Up</Link>
-                        </li>
-                        <li>
-                            <Link to="/login">Login</Link>
+                            <Link to="/login">
+                                Login
+                                {/* <i class="fas fa-user-circle"></i> */}
+                            </Link>
                         </li>
 
                     </ul>
-                </nav>
+                </div>
 
+                {/* <ul>
+                    <li className="header__mobileMenu">
+                        <span onClick={() => setActiveMenu(!activeMenu)}>
+                            <i className="fas fa-bars"></i>
+                        </span>
+                    </li> 
+                </ul> */}
 
             </div>
 

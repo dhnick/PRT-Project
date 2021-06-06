@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './Footer.css';
 
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -41,7 +42,9 @@ function Footer() {
                     <h4>Contact Us</h4>
                     
                     <ul>
-                        <li>Contact Us</li>
+                        <Link to="/contact">
+                            <li>Contact Us</li>
+                        </Link>
                     </ul>
                 </div>
             </div>

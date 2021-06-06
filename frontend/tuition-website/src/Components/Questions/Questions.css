@@ -1,9 +1,9 @@
 .questions {
-    background-color: lightgray;
+    background-color: #FFBF00;
     width: 100%;
 }
 .questions__wrap {
-    height: 600px;
+    height: 500px;
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
@@ -14,7 +14,7 @@
     width: 100%;
     text-align: center;
     /* padding: 10px; */
-    background-color: yellow;
+    /* background-color: #FFBF00; */
 }
 
 
@@ -26,9 +26,9 @@
     flex-direction: row;
     margin: 20px;
     /* margin-top: 20%; */
-    margin-left: 13%;
+    /* margin-left: 13%; */
 
-    height: 5%;
+    /* height: 5%; */
     width: 250px;
 }
 .questionPagination__block {
@@ -39,4 +39,18 @@
 
     padding: 25px;
     margin-top: 10%;
+}
+@media only screen and (max-width: 980px) { 
+    .questions__wrap {
+        height: 600px;
+        width: 100%;
+        padding: 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+
+    .questionPagination__block {
+        padding: 10px;
+        margin-top: 5%;
+    }
 }
